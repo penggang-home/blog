@@ -4,7 +4,7 @@ moment.locale("zh-cn") //显示中国的时间格式
 
 module.exports = {
   // SEO Start
-
+  base:'/blog/',
   // 网页的 title和左上角 绑定此处的值
   title: '彭先生的主页',
   // 描述
@@ -20,7 +20,8 @@ module.exports = {
   // SEO End
 
   // 默认打包到docs下的 dist目录 这里手动改成打包的 当前目录下的 dist下
-  dest: './dist',
+  // dest: './dist',
+
   // 端口
   port: '1920',
 
