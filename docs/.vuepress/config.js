@@ -1,3 +1,7 @@
+const moment = require('moment');
+moment.locale("zh-cn") //显示中国的时间格式
+
+
 module.exports = {
   // SEO Start
 
@@ -28,7 +32,7 @@ module.exports = {
     // navbar: false,
 
     logo: '/assets/img/logo.png',
-    
+
     nav: [
       { text: 'Home', link: '/' },
       {
@@ -102,5 +106,15 @@ module.exports = {
       // ]
     },
 
-  }
+  },
+  plugins: [
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          return moment(timestamp).format('LLLL')
+        }
+      }
+    ]
+  ]
 }
