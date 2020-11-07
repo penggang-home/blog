@@ -16,7 +16,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vssue/api-github-v3": "^1.4.4",
+    "@vssue/vuepress-plugin-vssue": "^1.4.6",
+    "@vuepress/plugin-back-to-top": "^1.7.1",
+    "countup.js": "^2.0.7",
     "moment": "^2.29.1",
     "vuepress": "^1.7.1"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-medium-zoom": "^1.7.1",
+    "vuepress-plugin-auto-sidebar": "^1.5.0"
   }
 }

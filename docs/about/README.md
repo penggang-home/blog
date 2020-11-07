@@ -17,3 +17,5 @@ title: About # 局部 title
 # 三、最后
 ## 3.1 删除
 ## 3.2 增加
+
+<Vssue :title="$title"/>
